@@ -1,70 +1,91 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🧪Proof of Concept (PoC)
 
-## Available Scripts
+  
 
-In the project directory, you can run:
+**Author:** Diego Peralta
+**Email:** peraltadie@paho.org
+**Date:** April 20th, 2025
+**Version:** 1.0.0
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎯 Objective
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This proof of concept aims to **demonstrate the feasibility of** _implementing the MedDRA API in a mixed ecosystem with local databases_. The goal is to validate that _this environments can extract and modify information between these environments_ can be implemented using _Node JS, Express, Sequalize, and React_.  
 
-### `npm test`
+## 🔍 Scope
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   ✔️ _Included_:
+	- Basic implementation of the core functionality.
+	- Local database implementation schema (DDL included)
+	- MedDRA API Search implementation
+	- Local tree generation for MedDRA Searched results
+	- Basic front-end implementation
+- ❌ _Not included_:
+	- Security and authentication for gateway.
+	- Scalability
+	- Test scenarios
 
-### `npm run build`
+## ⚙️Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   Node.js / Express
+    
+-   PostgreSQL
+    
+-   Sequelize
+    
+-   React
+  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Requirements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
 
-### `npm run eject`
+- Node v18.15.0 or higher (Download from here: [link](https://nodejs.org/en/download/prebuilt-installer/current))
+- React v17  or higher (More information here: [link](https://react.dev/learn))
+  
+## Instalation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Back-end
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the github repository:
+  
+```bash
+https://github.com/dpperalta/meddra-backend
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install requirired dependencies  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm install
+```
 
-## Learn More
+  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Run the aplication 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm run dev
+```
 
-### Code Splitting
+### Front-end
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone the github repository:
+  
+```bash
+https://github.com/dpperalta/meddra-frontend
+```
 
-### Analyzing the Bundle Size
+2. Install requirired dependencies  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+npm install
+```
 
-### Making a Progressive Web App
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. Run the aplication 
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+npm start
+```
